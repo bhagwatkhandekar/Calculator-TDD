@@ -10,4 +10,8 @@ describe StringCalculator do
     expect(@calculator.add("")).to eq(0)
   end
 
+  it "returns the sum of two numbers" do
+    expect(@calculator.add("10,5")).to eq(6)
+  end
+
 end
