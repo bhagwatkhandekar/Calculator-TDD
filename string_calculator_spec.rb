@@ -14,4 +14,8 @@ describe StringCalculator do
     expect(@calculator.add("10,5")).to eq(6)
   end
 
+  it "returns the number itself when only one number is given" do
+    expect(@calculator.add("1")).to eq(1)
+  end
+
 end
